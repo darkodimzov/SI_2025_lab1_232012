@@ -1,0 +1,57 @@
+ДЕЛ ДВА
+
+
+13. При креирање на трире гранки ги искористив следните команди. Наместо еднаш, три пати направив git fetch origin за сите поединечни гранки. Така беше препорачано до GitHub.
+
+git fetch origin
+git checkout find-all-completed-tasks
+   
+git checkout master
+git fetch origin
+git checkout list-tasks-sorted-by-name
+
+git checkout master
+git fetch origin
+git checkout remove-a-task-by-name
+
+14. Според командите во претходниот чекор, веќе бев во гранката remove-a-task-by-name
+
+15. Ја отворив SI2025Lab1Main.java датотеката користејќи IntelliJ и ја напишав соодветната функција. 
+
+16. Пред да направам commit направив add за датотеката да е staged.
+
+git add SI2025Lab1Main.java
+git commit -m "Remove task implemented"
+
+17. За наведената цел направив git push
+
+18. Го отвотив мојот репозиториум на GitHub и над датотеките имаше копче "compare and pull request". По кликање, ја оставив иста пораката и кликнав "create pull request".
+
+19. Во продолжение се командите за останатите 2 гранки. Се повторуваат и нема никаква разлика меѓу нив.  
+
+git checkout find-all-completed-tasks
+git add SI2025Lab1Main.java
+git commit -m "find completed tasks implemented"
+git push
+   
+git checkout list-tasks-sorted-by-name
+git add SI2025Lab1Main.java
+git commit -m "list tasks sorted by name implemented"
+git push
+
+20. На GitHub во делот Pull Request ги избрав remove-a-task-by-name и find-all-completed-tasks и кај истите кликнав merge pull request. Првото се изврши без конфликт и се
+изврши со методот fast forward, додека при второто настана конфликт кој го разрешив бидејќи на иста линија се повикуваа двете новододадени функции. 
+
+22. Најпрвин направив git pull за да ги синхронизирам двата репозиториуми. Потоа ја извшршив командата merge каде настана конфликт кој повторо требеше да го разрешан.
+Конфликотот повторно се јави кај повикувањето на функциите во main. По разрешување на истиот, направив add и commit.
+
+git checkout master
+git pull
+git merge list-tasks-sorted-by-name
+git add SI2025Lab1Main.java
+git commit
+
+23. Со користење на командата git push, дната репозиториуми станаа синхронизирани. 
+
+24. Со користење на командите touch logs.txt и git log --oneline --graph --all >> logs.txt направив датотека која ги содржи дотогашните git logs. Оваа датотека ја направив на
+Desktop и истата само ја ставив во фолдерот SI_2025_lab1_232012. Потоа направив git add за двете и git commit. 

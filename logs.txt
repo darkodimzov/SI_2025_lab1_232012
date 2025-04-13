@@ -1,0 +1,19 @@
+*   2a44e3f Merge branch 'list-tasks-sorted-by-name'
+|\  
+| * 9d6beab list tasks sorted by name implemented
+* |   641ff31 Merge pull request #11 from darkodimzov/find-all-completed-tasks
+|\ \  
+| * \   3fbb4ba Merge branch 'master' into find-all-completed-tasks
+| |\ \  
+| |/ /  
+|/| |   
+* | |   66d6441 Merge pull request #10 from darkodimzov/remove-a-task-by-name
+|\ \ \  
+| |_|/  
+|/| |   
+| * | d79af05 Remove task implemented
+|/ /  
+| * d071f3e find completed tasks implemented
+|/  
+* 1f9c23b Add starter code
+* 521c111 Initial commit
