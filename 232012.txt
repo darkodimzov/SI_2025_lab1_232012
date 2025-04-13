@@ -53,5 +53,31 @@ git commit
 
 23. Со користење на командата git push, дната репозиториуми станаа синхронизирани. 
 
-24. Со користење на командите touch logs.txt и git log --oneline --graph --all >> logs.txt направив датотека која ги содржи дотогашните git logs. Оваа датотека ја направив на
-Desktop и истата само ја ставив во фолдерот SI_2025_lab1_232012. Потоа направив git add за двете и git commit. 
+25. Со користење на командите touch logs.txt и git log --oneline --graph --all >> logs.txt направив датотека која ги содржи дотогашните git logs. Оваа датотека ја направив на
+Desktop и истата само ја ставив во фолдерот SI_2025_lab1_232012. Потоа направив git add за двете и git commit.
+
+git add 232012.txt
+git add logs.txt
+git commit -m "Final commit"
+
+26. Повторно направив само git push
+
+
+ДЕЛ ТРИ
+
+
+28. За оваа цел ја искористив командата git clone https://github.com/darkodimzov/SI_2025_lab1_151020
+
+29. Во продолжение се командите кои ги искористив:
+
+cd SI_2025_lab1_151020/
+touch 232012.txt
+nano 232012.txt
+git add 232012.txt
+git commit -m "Add file"
+
+30. Повторно искористив само git push
+
+
+!!Направив уште еден commit за да го додадам останатиот дел од документацијата!!
+ 
