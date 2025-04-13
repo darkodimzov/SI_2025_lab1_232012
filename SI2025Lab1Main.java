@@ -69,8 +69,13 @@ class TaskManager {
 
     // 2. Find all completed tasks
     public List<Task> getCompletedTasks() {
-        // TODO: Implement logic to return completed tasks
-        return new ArrayList<>();
+        List<Task> completed = new ArrayList<>();
+        for (Task t : tasks) {
+            if (t.isCompleted()) {
+                completed.add(t);
+            }
+        }
+        return completed;
     }
 
     // 3. List tasks sorted by name
@@ -120,6 +125,7 @@ public class SI2025Lab1Main {
         manager.addTask("Buy groceries", Priority.LOW, "Personal");
 
         // MISSING: Calls to the new methods that will be implemented
+        manager.getCompletedTasks();
 
         manager.printTasks();
     }
